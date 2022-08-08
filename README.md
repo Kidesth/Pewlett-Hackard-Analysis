@@ -22,14 +22,21 @@
 - This result creates a mentorship eligibility table that holds the current employees who were born between January 1, 1965, and December 31, 1965.
 
 #### - Mentorship_eligibilty.csv fig
+
+
 ![mentorship eligibilty csv](https://user-images.githubusercontent.com/107454933/183340666-68e795cf-ceb3-4313-b97b-1fd776ce66d3.png)
 
 ## Summary: 
 ### Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunam
 ##### - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-![mentor counts ](https://user-images.githubusercontent.com/107454933/183340702-119addcd-0e66-4865-b897-f9e6b5c0a20c.png)
+There are reasonable ratio of titles between the two tables under the critera.
+
+![mentor counts ](https://user-images.githubusercontent.com/107454933/183340702-119addcd-0e66-4865-b897-f9e6b5c0a20c.png) ![retiring titles csv](https://user- ![retiring titles](https://user-images.githubusercontent.com/107454933/183342465-4c32f7df-492e-47ec-b871-72a6cc1b0a58.png)
+
+
 
 ##### - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
 ![unique mentor tlist](https://user-images.githubusercontent.com/107454933/183340745-e2fa79e7-00a6-4c89-b8ce-cbd2473bf037.png)
 
 
