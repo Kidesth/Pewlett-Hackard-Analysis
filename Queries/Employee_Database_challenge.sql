@@ -69,3 +69,35 @@ ORDER by e.emp_no ASC, de.emp_no DESC;
 
 -- cheking the new created table
 SELECT * FROM mentorship_eligibilty;
+
+-- Deliverable 3 : write two additional quires
+_______________________________________________
+
+-- create mentor counts per titles, 
+SELECT COUNT(me.title), me.title
+INTO mentor_counts
+FROM mentorship_eligibilty as me
+GROUP BY me.title
+ORDER BY COUNT(me.title) DESC;
+
+-- To checking the mentor_counts results
+
+SELECT * FROM mentor_counts;
+
+-- Narrow the list of retiring employees to a list of potential mentors.
+ SELECT DISTINCT ON (e.emp_no)e.emp_no,
+        e.first_name,
+        e.last_name,
+        t.title,
+        t.from_date,
+        t.to_date
+ INTO unique_mentors_list
+ FROM employees as e
+ INNER JOIN titles as t
+ ON (e.emp_no = t.emp_no)
+ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ AND (t.from_date BETWEEN '1965-01-01' AND '1985-12-31')
+ ORDER BY e.emp_no ASC, t.from_date DESC;
+ 
+ -- To checking the unique_mentor_list results
+ SELECT * FROM unique_mentors_list;
